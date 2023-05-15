@@ -22,15 +22,16 @@
     **⚠️Make sure to change ```'/backend/'``` to your backend folder name**
 
     `"postbuild": "mv build ../backend/",`
-    
-    ![build](images\build.png)
+     
+<img width="261" alt="build" src="https://github.com/ann-swords/Deploy-on-Render/assets/64621429/d06c619c-0532-4df6-b240-183eeea657f3">
 
 
 4. Inside your frontend terminal, run the command `npm run build`. You should see a "build" folder created in your backend directory.
 
     - The command built an `index.html` that will be used in deployment, then the "postbuild" command was triggered and sent the folder into your backend, ready to be pushed to render. This index.html contains all of the magic of React.js that you've built inside the frontend.
 
-    ![build2](images/build2.png)
+    <img width="125" alt="build2" src="https://github.com/ann-swords/Deploy-on-Render/assets/64621429/962294f4-d31e-4163-bcc7-d3d21662073d">
+
 
 5. In your `server.js` , add `const path = require('path')` at the very top in your dependencies 
 
@@ -65,13 +66,15 @@
 
 13. Fill in the necessary details, such as the name of the service, the URL to your code repository, and the port number that your app will listen on.
 
-    ![render steps](images/Render.png)
+    ![Render](https://github.com/ann-swords/Deploy-on-Render/assets/64621429/e6be53d8-01ff-455a-98cd-f24ecdcc3051)
+
 
 14. Click on "Create Web Service" and wait for Render to deploy your app.
 
 15. Once the deployment is complete, you can access your app at the URL provided by Render.
 
-    ![deployed](images/deployed.png)
+    <img width="722" alt="deployed" src="https://github.com/ann-swords/Deploy-on-Render/assets/64621429/78d1b07c-5997-4fde-bb4d-43d26e377da4">
+
 
 16. Provide your database URL to your Render application
     follow the setpes that are mentioned in the previous [Render Tutorial](https://git.generalassemb.ly/SEI-03-Bahrain/SEI-03/blob/main/Projects/Project-02/Deployment%20on%20Render.md#6-provide-your-database-url-to-your-render-application)  to add all your seceret keys
